@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Organizer Dashboard</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1 class="logo">Sehari</h1>
+    </header>
+    <h1> Organize Event</h1>
+
+    <div class="form-group">
+      <label for="event-select">Select an event</label>
+      <select id="event-select">
+        <option value="">-- Choose an event --</option>
+        <option value="d">Birthday</option>
+        <option value="y">Naming Ceremony</option>
+        <option value="p">Anna Prasanna</option>
+        <option value="p">Half saree/Dhoti Ceremony</option>
+        <option value="p">Pelli choopulu</option>
+        <option value="p">Engagement</option>
+        <option value="p">Haldi</option>
+        <option value="p">Mehendi</option>
+        <option value="p">Sangeet</option>
+        <option value="p">Marriage</option>
+        <option value="p">Vratham</option>
+        <option value="p">Wedding Anniversary</option>
+        <option value="p">Srimantham</option>
+        <option value="p">Death Anniversary</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="date-time"><i class="icon">📅</i> Date & Time</label>
+      <input type="date" id="event-date" />
+      <input type="time" id="event-time" />
+    </div>
+
+    <div class="form-group">
+      <label for="venue"><i class="icon">📍</i> Venue</label>
+      <input type="text" id="venue" placeholder="Enter venue details" />
+    </div>
+
+    <div class="form-group">
+      <label for="thoughts"><i class="icon">📝</i> Organizer Thoughts</label>
+      <textarea id="thoughts" rows="4" placeholder="Share your thoughts about the event..."></textarea>
+    </div>
+    <div class="button-group">
+        <button class="secondary-button" onclick="callUs()">📞 Call Us</button>
+        <button class="secondary-button" onclick="openChat()">💬 Chat</button>
+      </div>
+      
+      <div class="submit-group">
+        <button class="primary-button" onclick="generateEvent()">Generate Event Details</button>
+      </div>
+  </div>
+ 
+  
+
+  <script src="script1.js"></script>
+</body>
+</html>
