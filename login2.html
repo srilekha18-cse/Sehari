@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Details</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Event Details</h1>
+
+    <!-- Event Box -->
+    <div class="box event-box">
+      <h2><a href="#">Sarah &amp; John's Wedding</a></h2>
+      <div class="event-info">
+        <p><span class="icon">📅</span> Wednesday, May 15, 2024</p>
+        <p><span class="icon">🕕</span> 18:00</p>
+        <p><span class="icon">📍</span> Crystal Garden Hall</p>
+      </div>
+    </div>
+
+    <!-- User Box -->
+    <div class="box user-box">
+      <p class="user-label">Your Name</p>
+      <p class="user-name">priya</p>
+    </div>
+
+    <!-- Calendar Box -->
+    <div class="box calendar-box">
+      <h2>Event Calendar</h2>
+
+      <div class="calendar-header">
+        <button id="prevBtn">&lt;</button>
+        <span id="monthYear"></span>
+        <button id="nextBtn">&gt;</button>
+      </div>
+
+      <div class="calendar-grid" id="calendarDays">
+        <!-- Calendar will be populated by JS -->
+      </div>
+    </div>
+
+    <!-- Contact Options -->
+    <div class="contact-box">
+      <button class="contact-btn">📞 Call Us</button>
+      <button class="contact-btn">💬 Chat with Us</button>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
+
+
